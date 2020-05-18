@@ -11,7 +11,7 @@
 
                 <div class="form-group">
                     <label>Username</label>
-                    <input required type="text" class="form-control" name="username">
+                    <input required type="text" class="form-control" name="username" value=<%= user.username %>>
                 </div>
 
                 <div class="form-group">
@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label>Email address</label>
-                    <input required type="email" class="form-control" name="email">
+                    <input required type="email" class="form-control" name="email" value=<%= user.email %>>
                 </div>
 
                 <div class="form-group">
@@ -51,7 +51,6 @@
                 </div>
 
                 <button type="submit" class="btn btn-success">Sign Up</button>
-                <a class="btn btn-outline-danger" href="/auth/google">Google+</a>
             </div>
         </div>
     </div>

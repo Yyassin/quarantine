@@ -5,9 +5,12 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    googleId : {
+        type: String,
+    },
     password : {
         type: String,
-        required: true
+        // required: true
     },
     email : {
         type: String,
@@ -15,7 +18,7 @@ const userSchema = mongoose.Schema({
     },
     skill : {
         type: String,
-        required: true,
+        // required: true,
         lowercase: true
     },
     tags : {
@@ -23,11 +26,14 @@ const userSchema = mongoose.Schema({
     },
     address : {
         type: String,
-        required: true
+        // required: true
     },
     friends : {
         type: Array,
     },
+    image : {
+        type: String
+    }
     
 });
 const register = mongoose.model('user', userSchema, "register");
